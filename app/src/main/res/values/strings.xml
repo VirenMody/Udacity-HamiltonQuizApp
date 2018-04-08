@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hamilton Quiz App</string>
+    <string name="question_writer">Who wrote the book, lyrics and music for Hamilton: An American Musical?</string>
+    <string name="writer_1">Stephen Sondheim</string>
+    <string name="writer_2">Sir Andrew Lloyd Webber</string>
+    <string name="writer_3">Lin-Manuel Miranda</string>
+    <string name="writer_4">Stephen Schwartz</string>
+</resources>

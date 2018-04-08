@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity" >
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hamilton" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginRight="@dimen/spacing_medium" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="Hamilton\nA Quiz App"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="425dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:src="@drawable/hamilton_logo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Where history meets a musical...\nand trivia too!"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.8"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:orientation="vertical"
+                    android:theme="@style/MyRadioButton">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_writer"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/writer_1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/writer_2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/writer_3"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/writer_4"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+                </RadioGroup>
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:orientation="vertical"
+                    android:theme="@style/MyRadioButton">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_writer"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/writer_1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/writer_2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/writer_3"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/writer_4"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
