@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/benchnine</item>
+        <item>@font/benchnine_bold</item>
+        <item>@font/benchnine_light</item>
+        <item>@font/cormorant_sc</item>
+    </array>
+</resources>

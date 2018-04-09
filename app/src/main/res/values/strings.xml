@@ -1,8 +1,23 @@
 <resources>
     <string name="app_name">Hamilton Quiz App</string>
-    <string name="question_writer">Who wrote the book, lyrics and music for Hamilton: An American Musical?</string>
-    <string name="writer_1">Stephen Sondheim</string>
-    <string name="writer_2">Sir Andrew Lloyd Webber</string>
-    <string name="writer_3">Lin-Manuel Miranda</string>
-    <string name="writer_4">Stephen Schwartz</string>
+    <string name="q1_writer">Who wrote the book, lyrics and music for Hamilton: An American Musical?</string>
+    <string name="q1_writer_c1">Stephen Sondheim</string>
+    <string name="q1_writer_c2">Sir Andrew Lloyd Webber</string>
+    <string name="q1_writer_c3">Lin-Manuel Miranda</string>
+    <string name="q1_writer_c4">Stephen Schwartz</string>
+    <string name="hamilton">H a m i l t o n</string>
+    <string name="quizapp">A QUIZ APP</string>
+    <string name="app_description">Where history meets a musical...\nand trivia!</string>
+    <string name="question_yearsToWrite">How long did it take Lin-Manuel Miranda to write the first two songs of the musical?</string>
+    <string name="q3_years_c1">1 day</string>
+    <string name="q3_years_c2">6 months</string>
+    <string name="q3_years_c3">1 year</string>
+    <string name="q3_years_c4">2 years</string>
+    <string name="q4_true_facts">Which of the following are true about Hamilton: An American Musical?</string>
+    <string name="q4_wpm_c1">Hamilton averages about 144 words/min with 20,520 words and a runtime of 2 hours and 23 minutes</string>
+    <string name="q4_mirandaRole_c3">Lin-Manuel Miranda played the role of Aaron Burr</string>
+    <string name="q4_answer_diverse_cast">In the original casting, the only main character played by a white actor is King George</string>
+    <string name="q4_whitehouse_c2">In 2009, the writer was invited to the White House to sing a song that represented America to President Obama. He chose to sing a song about Secretary-Treasurer, Alexander Hamilton, from a hip hop album he was working on</string>
+    <string name="q2_fillInTheBlank_lyrics">Finish the lyrics to this popular number sung by the character Alexander Hamilton:</string>
+    <string name="q2_lyrics_prompt">\"I\'m not going to throw away my</string>
 </resources>
