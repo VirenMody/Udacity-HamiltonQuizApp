@@ -10,11 +10,13 @@
     <string name="q1_writer_c3">Lin-Manuel Miranda</string>
     <string name="q1_writer_c4">Stephen Schwartz</string>
 
-    <string name="q2_fillInTheBlank_lyrics">Finish the lyrics to this popular number sung by the character Alexander Hamilton:</string>
-    <string name="q2_lyrics_prompt">\"I\'m not going to throw away my</string>
-    <string name="quote">\"</string>
+    <string name="q2_whosangthis">Which Hamilton character sang this hilarious number?</string>
+    <string name="q2_burr_c1">Aaron Burr</string>
+    <string name="q2_washington_c2">George Washington</string>
+    <string name="q2_hamilton_c3">Alexander Hamilton</string>
+    <string name="q2_theking_c4">King George III</string>
 
-    <string name="question_yearsToWrite">How long did it take Lin-Manuel Miranda to write the first two songs of the musical?</string>
+    <string name="q3_yearsToWrite">How long did it take Lin-Manuel Miranda to write the first two songs of the musical?</string>
     <string name="q3_years_c1">1 day</string>
     <string name="q3_years_c2">6 months</string>
     <string name="q3_years_c3">1 year</string>
@@ -31,4 +33,12 @@
     <string name="q5_washington_c2">George Washington</string>
     <string name="q5_jefferson_c3">Thomas Jefferson</string>
     <string name="q5_answer_burr_c4">Aaron Burr</string>
+
+    <string name="q6_fillInTheBlank_lyrics">Finish the lyrics to this popular number sung by the character Alexander Hamilton:</string>
+    <string name="q6_lyrics_prompt">\"I\'m not going to throw away my</string>
+    <string name="quote">\"</string>
+
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="submit">Submit</string>
 </resources>

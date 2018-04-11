@@ -1,8 +1,11 @@
 package com.example.android.hamiltonquizapp;
 
+import android.media.MediaPlayer;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -22,7 +25,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Queue to keep track of how many boxes are checked for Q5
         boxesCheckedQueue = new LinkedList<CheckBox>();
+
+        // Media player to play a song for Q2
+        final MediaPlayer kingGeorgeMP = MediaPlayer.create(this, R.raw.youll_be_back);
+        final Button playKingSong = (Button) this.findViewById(R.id.play_king_song);
+        // Event handler to pause/play the song
+        playKingSong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!kingGeorgeMP.isPlaying()) {
+                    kingGeorgeMP.setLooping(true);
+                    playKingSong.setText(R.string.pause);
+                    kingGeorgeMP.start();
+                } else {
+                    playKingSong.setText(R.string.play);
+                    kingGeorgeMP.pause();
+                }
+            }
+        });
     }
 
     /**
@@ -38,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
      * @return 1 if question was correct, 0 if incorrect
      */
     private int getQ2Result(){
-        return ((EditText) findViewById(R.id.q2_answer_text)).getText().toString().toLowerCase().equals("shot")? 1:0;
+        return ((RadioButton)findViewById(R.id.q2_answer_theking)).isChecked()? 1:0;
     }
 
     /**
@@ -82,6 +105,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * The method returns the result of question #6
+     * @return 1 if question was correct, 0 if incorrect
+     */
+    private int getQ6Result(){
+        return ((EditText) findViewById(R.id.q2_answer_text)).getText().toString().toLowerCase().equals("shot")? 1:0;
+    }
+
+    /**
      * This method will allow only two checkboxes to be checked at a time. When a 3rd is checked, the 1st checked will be unchecked.
      * @param view is the checkbox that was checked or unchecked
      */
@@ -114,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
     public void gradeQuiz (View view) {
         int numCorrect = 0;
 
-        numCorrect += getQ1Result() + getQ2Result() + getQ3Result() + getQ4Result() + getQ5Result();
+        numCorrect += getQ1Result() + getQ2Result() + getQ3Result() + getQ4Result() + getQ5Result() + getQ6Result();
         String toastScoreMessage = "You got " + numCorrect + " out of " + numQuestions + " correct.";
 
         // Show a toast with the number correct out of the number of questions

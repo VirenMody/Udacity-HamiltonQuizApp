@@ -122,61 +122,76 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
+                    android:layout_height="1dp"
                     android:layout_margin="@dimen/spacing_medium"
-                    android:background="@android:color/darker_gray"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_medium"
-                    android:layout_marginRight="@dimen/spacing_medium"
-                    android:orientation="vertical" >
+                    android:background="@color/colorPrimary"/>
 
                     <TextView
-                        android:id="@+id/question2"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="@dimen/spacing_small"
-                        android:textColor="@android:color/white"
-                        android:text="@string/q2_fillInTheBlank_lyrics"/>
+                        android:layout_marginLeft="@dimen/spacing_medium"
+                        android:text="@string/q2_whosangthis"
+                        android:textColor="@android:color/white"  />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <RadioGroup
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="2"
                             android:layout_marginLeft="@dimen/spacing_medium"
-                            android:textColor="@android:color/white"
-                            android:text="@string/q2_lyrics_prompt"/>
+                            android:layout_marginRight="@dimen/spacing_medium"
+                            android:orientation="vertical"
+                            android:theme="@style/QRadioButtons">
 
-                        <EditText
-                            android:id="@+id/q2_answer_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:backgroundTint="@android:color/darker_gray"
-                            android:textColor="@android:color/white"
-                            android:textSize="@dimen/text_default"
-                            android:hint="            "/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/q2_burr_c1"
+                                android:textColor="@android:color/white" />
 
-                        <TextView
-                            android:layout_width="match_parent"
+                            <RadioButton
+                                android:id="@+id/q2_answer_theking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/q2_washington_c2"
+                                android:textColor="@android:color/white" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/q2_hamilton_c3"
+                                android:textColor="@android:color/white" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/q2_theking_c4"
+                                android:textColor="@android:color/white" />
+                        </RadioGroup>
+
+                        <Button
+                            android:id="@+id/play_king_song"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/white"
-                            android:text="@string/quote"/>
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/spacing_large"
+                            android:layout_marginEnd="@dimen/spacing_large"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:background="@drawable/my_button_bg"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/play" />
 
                     </LinearLayout>
-
-                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="@dimen/spacing_medium"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="@color/colorPrimary"/>
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -189,7 +204,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/question_yearsToWrite"
+                        android:text="@string/q3_yearsToWrite"
                         android:textColor="@android:color/white"  />
 
                     <RadioButton
@@ -222,7 +237,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="@dimen/spacing_medium"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="@color/colorPrimary"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -276,7 +291,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="@dimen/spacing_medium"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="@color/colorPrimary"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -295,6 +310,7 @@
                     <pl.droidsonroids.gif.GifTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:background="@drawable/hamilton_battle_gif" />
 
                     <CheckBox
@@ -335,6 +351,59 @@
 
                 </LinearLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:background="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:layout_marginRight="@dimen/spacing_medium"
+                    android:orientation="vertical" >
+
+
+                    <TextView
+                        android:id="@+id/question6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/spacing_small"
+                        android:textColor="@android:color/white"
+                        android:text="@string/q6_fillInTheBlank_lyrics"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing_medium"
+                            android:textColor="@android:color/white"
+                            android:text="@string/q6_lyrics_prompt"/>
+
+                        <EditText
+                            android:id="@+id/q2_answer_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_default"
+                            android:hint="            "/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="@string/quote"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -342,7 +411,7 @@
                     android:layout_gravity="center"
                     android:background="@android:color/transparent"
                     android:textColor="@color/colorPrimary"
-                    android:text="Submit"
+                    android:text="@string/submit"
                     android:onClick="gradeQuiz"/>
 
 
