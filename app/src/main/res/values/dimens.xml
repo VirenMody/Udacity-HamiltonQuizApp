@@ -11,4 +11,5 @@
     <dimen name="text_description_land">20sp</dimen>
     <dimen name="separator_height">1dp</dimen>
     <dimen name="spacing_small_neg">-8dp</dimen>
+    <dimen name="spacing_medium_neg">-16dp</dimen>
 </resources>

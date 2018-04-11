@@ -75,8 +75,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:alpha="0.75"
-                android:background="@drawable/layout_bg"
+                android:background="@drawable/layout_bg2"
                 android:orientation="vertical">
 
                 <RadioGroup
@@ -270,6 +269,69 @@
                         android:textColor="@android:color/white"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q4_answer_diverse_cast"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:layout_marginRight="@dimen/spacing_medium"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_small"
+                        android:textColor="@android:color/white"
+                        android:text="@string/q5_cabinet"/>
+
+                    <pl.droidsonroids.gif.GifTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hamilton_battle_gif" />
+
+                    <CheckBox
+                        android:id="@+id/q5_answer_hamilton_check1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:theme="@style/QCheckBoxes"
+                        android:text="@string/q5_hamilton_c1"
+                        android:onClick="allowOnlyTwo" />
+
+                    <CheckBox
+                        android:id="@+id/q5_answer_washington_check2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:theme="@style/QCheckBoxes"
+                        android:text="@string/q5_washington_c2"
+                        android:onClick="allowOnlyTwo" />
+
+                    <CheckBox
+                        android:id="@+id/q5_answer_jefferson_check3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:theme="@style/QCheckBoxes"
+                        android:text="@string/q5_jefferson_c3"
+                        android:onClick="allowOnlyTwo" />
+
+                    <CheckBox
+                        android:id="@+id/q5_answer_burr_check4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:theme="@style/QCheckBoxes"
+                        android:text="@string/q5_answer_burr_c4"
+                        android:onClick="allowOnlyTwo" />
 
                 </LinearLayout>
 
