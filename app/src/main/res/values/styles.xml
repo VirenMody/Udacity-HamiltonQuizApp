@@ -9,14 +9,14 @@
     </style>
 
     <style name="QRadioButtons" parent="Theme.AppCompat.Light">
-        <item name="colorControlNormal">#a8980f</item>
-        <item name="colorControlActivated">#a8980f</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="QCheckBoxes" parent="Base.Theme.AppCompat">
-        <item name="colorAccent">#a8980f</item> <!-- for uncheck state -->
-        <item name="android:textColorSecondary">#a8980f</item> <!-- for check state -->
+        <item name="colorAccent">@color/colorPrimary</item> <!-- for uncheck state -->
+        <item name="android:textColorSecondary">@color/colorPrimary</item> <!-- for check state -->
     </style>
 
 </resources>

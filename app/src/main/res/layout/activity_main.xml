@@ -36,11 +36,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginBottom="@dimen/spacing_small_neg"
                     android:gravity="center"
                     android:text="@string/hamilton"
                     android:textAllCaps="true"
                     android:textColor="@android:color/white"
-                    android:textSize="36sp"
+                    android:textSize="@dimen/text_title"
                     app:fontFamily="@font/cormorant_sc" />
 
                 <TextView
@@ -50,12 +51,12 @@
                     android:text="@string/quizapp"
                     android:textAllCaps="true"
                     android:textColor="@android:color/white"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/text_medium"
                     app:fontFamily="@font/benchnine_light" />
 
                 <ImageView
-                    android:layout_width="425dp"
-                    android:layout_height="425dp"
+                    android:layout_width="@dimen/width_logo_landscape"
+                    android:layout_height="@dimen/width_logo_landscape"
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/spacing_medium"
                     android:src="@drawable/hamilton_logo" />
@@ -66,7 +67,7 @@
                     android:layout_marginBottom="@dimen/spacing_medium"
                     android:gravity="center"
                     android:textColor="@android:color/white"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_description"
                     app:fontFamily="@font/benchnine_light"
                     android:text="@string/app_description" />
             </LinearLayout>
@@ -122,7 +123,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/separator_height"
                     android:layout_margin="@dimen/spacing_medium"
                     android:background="@android:color/darker_gray"/>
 
@@ -159,14 +160,14 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/darker_gray"
                             android:textColor="@android:color/white"
-                            android:textSize="14sp"
+                            android:textSize="@dimen/text_default"
                             android:hint="            "/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/white"
-                            android:text="&quot;"/>
+                            android:text="@string/quote"/>
 
                     </LinearLayout>
 
@@ -278,7 +279,7 @@
                     android:layout_margin="@dimen/spacing_medium"
                     android:layout_gravity="center"
                     android:background="@android:color/transparent"
-                    android:textColor="#a8980f"
+                    android:textColor="@color/colorPrimary"
                     android:text="Submit"
                     android:onClick="gradeQuiz"/>
 

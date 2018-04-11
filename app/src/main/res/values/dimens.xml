@@ -3,4 +3,12 @@
     <dimen name="spacing_medium">16dp</dimen>
     <dimen name="text_medium">16sp</dimen>
     <dimen name="spacing_small">8dp</dimen>
+    <dimen name="text_default">14sp</dimen>
+    <dimen name="text_title">42sp</dimen>
+    <dimen name="text_title_land">40sp</dimen>
+    <dimen name="width_logo_landscape">425dp</dimen>
+    <dimen name="text_description">22sp</dimen>
+    <dimen name="text_description_land">20sp</dimen>
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="spacing_small_neg">-8dp</dimen>
 </resources>

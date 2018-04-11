@@ -20,4 +20,5 @@
     <string name="q4_whitehouse_c2">In 2009, the writer was invited to the White House to sing a song that represented America to President Obama. He chose to sing a song about Secretary-Treasurer, Alexander Hamilton, from a hip hop album he was working on</string>
     <string name="q2_fillInTheBlank_lyrics">Finish the lyrics to this popular number sung by the character Alexander Hamilton:</string>
     <string name="q2_lyrics_prompt">\"I\'m not going to throw away my</string>
+    <string name="quote">\"</string>
 </resources>
