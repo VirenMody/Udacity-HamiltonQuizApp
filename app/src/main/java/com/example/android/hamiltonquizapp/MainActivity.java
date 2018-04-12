@@ -1,7 +1,6 @@
 package com.example.android.hamiltonquizapp;
 
 import android.media.MediaPlayer;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,13 +12,26 @@ import android.widget.Toast;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class MainActivity extends AppCompatActivity {
 
     private static int numQuestions = 5;
     private Queue<CheckBox> boxesCheckedQueue;
+    RadioButton q1_answer;
+    RadioButton q2_answer;
+    RadioButton q3_answer;
+
+    CheckBox q4_answer_c1;
+    CheckBox q4_answer_c2;
+    CheckBox q4_answer_c3;
+    CheckBox q4_answer_c4;
+
+    CheckBox q5_answer_c1;
+    CheckBox q5_answer_c2;
+    CheckBox q5_answer_c3;
+    CheckBox q5_answer_c4;
+
+    EditText q6_answer_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +58,22 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        q1_answer = (RadioButton)findViewById(R.id.q1_answer_radio);
+        q2_answer = (RadioButton)findViewById(R.id.q2_answer_theking);
+        q3_answer = (RadioButton)findViewById(R.id.q3_answer_radio);
+
+        q4_answer_c1 = (CheckBox) findViewById(R.id.q4_answer_wpm_check1);
+        q4_answer_c2 = (CheckBox) findViewById(R.id.q4_answer_whitehouse_check2);
+        q4_answer_c3 = (CheckBox) findViewById(R.id.q4_answer_mirandarole_check3);
+        q4_answer_c4 = (CheckBox) findViewById(R.id.q4_answer_diversecast_check4);
+
+        q5_answer_c1 = (CheckBox) findViewById((R.id.q5_answer_hamilton_check1));
+        q5_answer_c2 = (CheckBox) findViewById((R.id.q5_answer_washington_check2));
+        q5_answer_c3 = (CheckBox) findViewById((R.id.q5_answer_jefferson_check3));
+        q5_answer_c4 = (CheckBox) findViewById((R.id.q5_answer_burr_check4));
+
+        q6_answer_text = (EditText) findViewById(R.id.q6_answer_text);
     }
 
     /**
@@ -53,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
      * @return 1 if question was correct, 0 if incorrect
      */
     private int getQ1Result(){
-        return ((RadioButton)findViewById(R.id.q1_answer_radio)).isChecked()? 1:0;
+        return q1_answer.isChecked()? 1:0;
     }
 
     /**
@@ -61,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
      * @return 1 if question was correct, 0 if incorrect
      */
     private int getQ2Result(){
-        return ((RadioButton)findViewById(R.id.q2_answer_theking)).isChecked()? 1:0;
+        return q2_answer.isChecked()? 1:0;
     }
 
     /**
@@ -69,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
      * @return 1 if question was correct, 0 if incorrect
      */
     private int getQ3Result(){
-        return ((RadioButton) findViewById(R.id.q3_answer_radio)).isChecked()? 1:0;
+        return q3_answer.isChecked()? 1:0;
     }
 
     /**
@@ -77,11 +105,10 @@ public class MainActivity extends AppCompatActivity {
      * @return 1 if question was correct, 0 if incorrect
      */
     private int getQ4Result(){
-
-        if(((CheckBox) findViewById(R.id.q4_answer_wpm_check1)).isChecked() &&
-                ((CheckBox) findViewById(R.id.q4_answer_whitehouse_check2)).isChecked() &&
-                ((CheckBox) findViewById(R.id.q4_answer_diversecast_check4)).isChecked() &&
-                !((CheckBox) findViewById(R.id.q4_answer_mirandarole_check3)).isChecked()) {
+        if(q4_answer_c1.isChecked() &&
+                q4_answer_c2.isChecked() &&
+                q4_answer_c4.isChecked() &&
+                !q4_answer_c3.isChecked()) {
             return 1;
         } else {
             return 0;
@@ -94,10 +121,10 @@ public class MainActivity extends AppCompatActivity {
      */
     private int getQ5Result(){
 
-        if(((CheckBox) findViewById(R.id.q5_answer_hamilton_check1)).isChecked() &&
-                ((CheckBox) findViewById(R.id.q5_answer_jefferson_check3)).isChecked() &&
-                !((CheckBox) findViewById(R.id.q5_answer_washington_check2)).isChecked() &&
-                !((CheckBox) findViewById(R.id.q5_answer_burr_check4)).isChecked()) {
+        if(q5_answer_c1.isChecked() &&
+                q5_answer_c3.isChecked() &&
+                !q5_answer_c2.isChecked() &&
+                !q5_answer_c4.isChecked()) {
             return 1;
         } else {
             return 0;
@@ -109,7 +136,8 @@ public class MainActivity extends AppCompatActivity {
      * @return 1 if question was correct, 0 if incorrect
      */
     private int getQ6Result(){
-        return ((EditText) findViewById(R.id.q2_answer_text)).getText().toString().toLowerCase().equals("shot")? 1:0;
+
+        return q6_answer_text.getText().toString().toLowerCase().equals("shot")? 1:0;
     }
 
     /**
