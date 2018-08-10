@@ -94,37 +94,26 @@
                         android:textColor="@android:color/white" />
 
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q1_writer_c1"
-                        android:textColor="@android:color/white" />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q1_writer_c1" />
 
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q1_writer_c2"
-                        android:textColor="@android:color/white" />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q1_writer_c2" />
 
                     <RadioButton
                         android:id="@+id/q1_answer_radio"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q1_writer_c3"
-                        android:textColor="@android:color/white" />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q1_writer_c3" />
 
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q1_writer_c4"
-                        android:textColor="@android:color/white" />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q1_writer_c4" />
 
                 </RadioGroup>
 
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="@dimen/spacing_medium"
-                    android:background="@color/colorPrimary"/>
+                    style="@style/QLineSeparator"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -148,29 +137,21 @@
                             android:theme="@style/QRadioButtons">
 
                             <RadioButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/q2_burr_c1"
-                                android:textColor="@android:color/white" />
+                                style="@style/AnswerChoices"
+                                android:text="@string/q2_burr_c1" />
 
                             <RadioButton
                                 android:id="@+id/q2_answer_theking"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/q2_washington_c2"
-                                android:textColor="@android:color/white" />
+                                style="@style/AnswerChoices"
+                                android:text="@string/q2_washington_c2" />
 
                             <RadioButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/q2_hamilton_c3"
-                                android:textColor="@android:color/white" />
+                                style="@style/AnswerChoices"
+                                android:text="@string/q2_hamilton_c3" />
 
                             <RadioButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/q2_theking_c4"
-                                android:textColor="@android:color/white" />
+                                style="@style/AnswerChoices"
+                                android:text="@string/q2_theking_c4" />
                         </RadioGroup>
 
                         <Button
@@ -188,10 +169,7 @@
                     </LinearLayout>
 
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="@dimen/spacing_medium"
-                    android:background="@color/colorPrimary"/>
+                    style="@style/QLineSeparator"/>
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -202,42 +180,29 @@
                     android:theme="@style/QRadioButtons">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q3_yearsToWrite"
-                        android:textColor="@android:color/white"  />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q3_yearsToWrite" />
 
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q3_years_c1"
-                        android:textColor="@android:color/white" />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q3_years_c1" />
 
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q3_years_c2"
-                        android:textColor="@android:color/white" />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q3_years_c2" />
 
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q3_years_c3"
-                        android:textColor="@android:color/white" />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q3_years_c3" />
 
                     <RadioButton
                         android:id="@+id/q3_answer_radio"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q3_years_c4"
-                        android:textColor="@android:color/white" />
+                        style="@style/AnswerChoices"
+                        android:text="@string/q3_years_c4" />
                 </RadioGroup>
 
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="@dimen/spacing_medium"
-                    android:background="@color/colorPrimary"/>
+                    style="@style/QLineSeparator"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -255,43 +220,32 @@
 
                     <CheckBox
                         android:id="@+id/q4_answer_wpm_check1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
+                        style="@style/AnswerChoices"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q4_wpm_c1"/>
 
                     <CheckBox
                         android:id="@+id/q4_answer_whitehouse_check2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
+                        style="@style/AnswerChoices"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q4_whitehouse_c2"/>
 
                     <CheckBox
                         android:id="@+id/q4_answer_mirandarole_check3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
+                        style="@style/AnswerChoices"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q4_mirandaRole_c3"/>
 
                     <CheckBox
                         android:id="@+id/q4_answer_diversecast_check4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
+                        style="@style/AnswerChoices"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q4_answer_diverse_cast"/>
 
                 </LinearLayout>
 
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="@dimen/spacing_medium"
-                    android:background="@color/colorPrimary"/>
+                    style="@style/QLineSeparator"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -315,36 +269,28 @@
 
                     <CheckBox
                         android:id="@+id/q5_answer_hamilton_check1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
+                        style="@style/AnswerChoices"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q5_hamilton_c1"
                         android:onClick="allowOnlyTwo" />
 
                     <CheckBox
                         android:id="@+id/q5_answer_washington_check2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
+                        style="@style/AnswerChoices"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q5_washington_c2"
                         android:onClick="allowOnlyTwo" />
 
                     <CheckBox
                         android:id="@+id/q5_answer_jefferson_check3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
+                        style="@style/AnswerChoices"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q5_jefferson_c3"
                         android:onClick="allowOnlyTwo" />
 
                     <CheckBox
                         android:id="@+id/q5_answer_burr_check4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
+                        style="@style/AnswerChoices"
                         android:theme="@style/QCheckBoxes"
                         android:text="@string/q5_answer_burr_c4"
                         android:onClick="allowOnlyTwo" />
@@ -352,10 +298,7 @@
                 </LinearLayout>
 
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
-                    android:layout_margin="@dimen/spacing_medium"
-                    android:background="@color/colorPrimary"/>
+                    style="@style/QLineSeparator"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
